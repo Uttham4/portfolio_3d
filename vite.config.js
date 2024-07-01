@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude:["**/*.glb"],
   base:"/portfolio_3d",
-})
+  build: {
+      chunkSizeWarningLimit: 1600
+  },
+});
